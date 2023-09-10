@@ -25,7 +25,7 @@ public class MemoryMemberRepositoryTest {
 
         Member result = repository.findById(member.getId()).get();
         // 반환 타입이 Optional이라서 값을 꺼낼 때는 get() 메서드를 통해서 꺼냄.
-        // get() 메서드를 통해서 꺼내는 것은 원래 좋은 방법은 아님.
+        // get() 메서드를 통해서 꺼내는 것은 원래 좋은 방법은 아니다.
 
         // System.out.println("result = " + (result == member)); // 계속해서 콘솔창을 보는것은 좋지 않음.
 
