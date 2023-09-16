@@ -14,6 +14,8 @@
 ## 회원 목록 페이지 화면
 ![image](https://github.com/Qnd1101/inflearn_spring_lecture/assets/107795830/fb7373e5-7483-4a03-9ef5-caf43be0d48a)
 
+
+
 ### 회원가입을 한 사용자를 회원 목록 페이지에 표시 되도록 표현하였고, 자동으로 일련번호를 증가 하도록 설계하였습니다.
 
 ---
