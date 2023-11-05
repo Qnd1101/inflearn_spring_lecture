@@ -7,7 +7,7 @@
 ## 회원가입 페이지 화면
 ![image](https://github.com/Qnd1101/inflearn_spring_lecture/assets/107795830/772c703e-83eb-4107-bd36-60298cbafe54)
 
-### 이름을 입력하게 되면 DataBase 에 insert 되는 방식으로 등록하는 시스템으로 구성하였습니다.
+### 이름을 입력하게 되면 자동으로 회원 목록에 등록되는 시스템으로 구성하였습니다.
 
 ---
 
