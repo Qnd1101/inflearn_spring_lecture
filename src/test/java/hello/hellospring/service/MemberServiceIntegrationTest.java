@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest
 @Transactional
-class MemberServiceIntegrationTest {
+class   MemberServiceIntegrationTest {
 
     @Autowired MemberService memberService;
     @Autowired MemberRepository memberRepository;
@@ -35,7 +35,7 @@ class MemberServiceIntegrationTest {
 
         //then : 결과가 이게 나와야 해
         Member findMember = memberRepository.findById(saveId).get();
-        assertThat(member.getName()).isEqualTo(findMember.getName());
+        assertEquals(member.getName(), findMember.getName());
     }
 
     @Test
@@ -50,7 +50,7 @@ class MemberServiceIntegrationTest {
         //when
         memberService.join(member1);
         IllegalStateException e = assertThrows(IllegalStateException.class,
-                () -> memberService.join(member2));
+                () -> memberService.join(member2));//예외가 발생해야 한다.
 
         assertThat(e.getMessage()).isEqualTo("이미 존재하는 회원입니다.");
 
